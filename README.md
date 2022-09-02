@@ -4,3 +4,6 @@
 1. HTML5
 1. CSS3
 1. Bootstrap v5.2
+#
+#
+# Este proyecto esta siendo trabajado individualmente.
