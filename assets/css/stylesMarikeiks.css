@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Pacifico&family=Raleway&family=Sacramento&display=swap');
 
 /* Contenido header */
 nav {
@@ -29,8 +30,6 @@ nav a:hover{
 
 @media screen and (max-width: 850px) {
     .imagen-carrusel {
-    object-fit: cover;
-    width: 100%;
     height: calc(300px + 1vw);
 }
 }

@@ -38,23 +38,6 @@ nav a:hover{
     height: calc(150px + 1vw);
 }
 
-#titulo-inicio{
-    position: absolute; 
-    top: 100%; 
-    width: 100%; 
-    text-align: center; 
-    color: #311e27;
-    font-family: 'Sacramento', cursive;
-    font-size: calc(50px + 1vw);
-}
-
-@media screen and (max-width: 800px) {
-    #titulo-inicio {
-        top: 50%;
-    }
-} 
-
-
 section {
     background-color: #f8eeee;
     justify-content: center;
