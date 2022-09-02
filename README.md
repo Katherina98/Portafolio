@@ -1,9 +1,9 @@
-# El siguiente proyecto muestra mi portafolio personal, el cual será presentado con fines educativos y laborales.
-#
+# El siguiente proyecto muestra mi portafolio personal.
+Este proyecto será presentado con fines educativos y laborales.
+
 # Se utiliza: 
 1. HTML5
 1. CSS3
 1. Bootstrap v5.2
-#
-#
-# Este proyecto esta siendo trabajado individualmente.
+
+Este proyecto esta siendo trabajado individualmente.
