@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Pacifico&family=Raleway&family=Sacramento&display=swap');
+
+/* font-family: 'Klee One', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Sacramento', cursive; */
+
+
+/* Contenido header */
+nav {
+    background-color: #b59796;
+}
+
+nav a:hover{
+    background-color: wheat;
+    color: #4C1159;
+    border-radius: 10px;
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+/*Estilo asociado a los <a>*/
+.enlace-header {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* Contenido cuerpo de página */
+.imagen-fondo {
+    width: 100%;
+    height: calc(300px + 1vw);
+}
+
+.imagen-sobre-mi {
+    width: 100%;
+    height: calc(150px + 1vw);
+}
+
+#titulo-inicio{
+    position: absolute; 
+    top: 100%; 
+    width: 100%; 
+    text-align: center; 
+    color: #311e27;
+    font-family: 'Sacramento', cursive;
+    font-size: calc(50px + 1vw);
+}
+
+@media screen and (max-width: 800px) {
+    #titulo-inicio {
+        top: 50%;
+    }
+} 
+
+
+section {
+    background-color: #f8eeee;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+article {
+    width: 100%;
+    text-align: justify;
+}
+
+
+.enlace-titulo-inicio{
+    font-family: 'Sacramento', cursive;
+    font-size: calc(20px + 1vw);
+    color:#351e1e;
+    text-align: center;
+    
+}
+
+.enlace-parrafo-inicio{
+    font-family: 'Raleway', sans-serif;
+    font-size: calc(7px + 1vw);
+    color:#4f3736;
+    text-align: center;
+}
+
+
+
+/* Contenido footer */
+footer {
+    height: calc(50px + 1vw);
+    display: flex;
+    background-color: #b59796;
+    justify-content:space-around;
+}
+
+footer a:hover {
+    background-color: wheat;
+    color:#4f3736;
+    border-radius: 10px;
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+.enlace-footer{
+    font-family: 'Raleway', sans-serif;
+    font-size: calc(5px + 1vw);
+    color: #f8eeee;
+    text-decoration: none;
+}
+

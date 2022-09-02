@@ -1,0 +1,60 @@
+
+/* Contenido header */
+nav {
+    background-color: #b59796;
+}
+
+nav a:hover{
+    background-color: wheat;
+    color: #4C1159;
+    border-radius: 10px;
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+/*Estilo asociado a los <a>*/
+.enlace-header {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* Imagenes de historia */
+.imagen-carrusel {
+    object-fit: cover;
+    width: 100%;
+    height: calc(800px + 1vw);
+}
+
+@media screen and (max-width: 850px) {
+    .imagen-carrusel {
+    object-fit: cover;
+    width: 100%;
+    height: calc(300px + 1vw);
+}
+}
+
+/* Contenido footer */
+footer {
+    height: calc(50px + 1vw);
+    display: flex;
+    background-color: #b59796;
+    justify-content:space-around;
+}
+
+footer a:hover {
+    background-color: wheat;
+    color:#4f3736;
+    border-radius: 10px;
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+.enlace-footer{
+    font-family: 'Raleway', sans-serif;
+    font-size: calc(5px + 1vw);
+    color: #f8eeee;
+    text-decoration: none;
+}

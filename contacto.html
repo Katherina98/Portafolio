@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <link rel="icon" type="image-icon" href="assets/img/icono.png">
+    <link rel="stylesheet" href="assets/css/stylesContacto.css" />
+
+    <!--Link de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <!--Inicio de enlaces de navegación-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand enlace-header" href="index.html">Portafolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active enlace-header" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active enlace-header" aria-current="page" href="#">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active enlace-header" aria-current="page"
+                                href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Fin de enlaces de navegación-->
+    </header>
+
+    <form class="container" action="#" method="get">
+        <h3 class="titulos">Formulario de contacto</h3>
+        <label class="form-label" for="nombre">Nombre</label>
+        <input class="form-control" type="text" id="nombre" name="nombre" />
+        <br><br>
+        <label class="form-label" for="apellido">Apellido</label>
+        <input class="form-control" type="text" id="apellido" name="apellido" />
+        <br><br>
+        <label class="form-label" for="correo">Correo electrónico</label>
+        <input class="form-control" type="email" id="correo" name="correo" />
+        <h5 class="subtitulo">¿Nos conocemos?</h5>
+        <input class="form-check-input" type="radio" id="positivo" name="positivo" value="si" />
+        <label class="form-check-label" for="masculino">Si</label>
+        <br>
+        <input class="form-check-input" type="radio" id="femenino" name="positivo" value="no" />
+        <label class="form-check-label" for="femenino">No</label>
+        <h5 class="subtitulo">Intereses:</h5>
+        <input class="form-check-input" type="checkbox" id="marketing-digital" name="intereses"
+            value="Marketing Digital" />
+        <label class="form-check-label" for="marketing-digital">Marketing Digital</label>
+        <br>
+        <input class="form-check-input" type="checkbox" id="marketing-directo" name="intereses"
+            value="Marketing Directo" />
+        <label class="form-check-label" for="marketing-directo">Marketing Directo</label>
+        <br>
+        <input class="form-check-input" type="checkbox" id="email-marketing" name="intereses" value="Email Marketing" />
+        <label class="form-check-label" for="email-marketing">Email Marketing</label>
+        <br><br>
+        <button class="btn btn-dark" id="btn-suscribir" type="button">Suscribir</button>
+    </form>
+
+    <footer class="p-3">
+        <a class="enlace-footer" href="https://www.linkedin.com/in/katherina-orellana-silva/">LinkedIn</a>
+        <a class="enlace-footer" href="https://www.linkedin.com/in/katherina-orellana-silva/">Gmail</a>
+        <a class="enlace-footer" href="https://www.linkedin.com/in/katherina-orellana-silva/">Instagram</a>
+        <a class="enlace-footer" href="https://www.linkedin.com/in/katherina-orellana-silva/">Facebook</a>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
