@@ -5,34 +5,7 @@ font-family: 'Pacifico', cursive;
 font-family: 'Raleway', sans-serif;
 font-family: 'Sacramento', cursive; */
 
-
-/* Contenido header */
-nav {
-    background-color: #b59796;
-}
-
-nav a:hover{
-    background-color: wheat;
-    color: #4C1159;
-    border-radius: 10px;
-    transition: all 500ms ease;
-    -webkit-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-}
-
-/*Estilo asociado a los <a>*/
-.enlace-header {
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-}
-
-
 /* Contenido cuerpo de página */
-.imagen-fondo {
-    width: 100%;
-    height: calc(300px + 1vw);
-}
-
 section {
     background-color: #f8eeee;
     justify-content: center;
@@ -46,57 +19,49 @@ article {
 }
 
 
-.enlace-titulo-inicio{
+.enlace-titulo-inicio {
     font-family: 'Sacramento', cursive;
-    font-size: calc(20px + 1vw);
-    color:#351e1e;
+    font-size: calc(30px + 1vw);
+    color: #351e1e;
     text-align: center;
-    
+
 }
 
-.enlace-parrafo-inicio{
+.enlace-parrafo-inicio {
     font-family: 'Raleway', sans-serif;
     font-size: calc(7px + 1vw);
-    color:#4f3736;
+    color: #4f3736;
+    margin-bottom: 30px;
 }
 
 #fondo-main {
-    background-color:  #f8eeee;
+    background-color: #f8eeee;
 }
 
-/* Contenido footer */
-footer {
-    height: auto;
-    display: flex;
-    background-color: #b59796;
-    justify-content:space-around;
-}
-
-footer a:hover {
-    background-color: wheat;
-    color:#4f3736;
-    border-radius: 10px;
-    transition: all 500ms ease;
-    -webkit-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-}
-
-.enlace-footer{
+.card {
+    float: left;
+    padding: 10px;
+    height: calc(450px + 3vw);
+    margin-left: 10%;
+    margin-bottom: 50px;
+    color: #66535c;
+    background-color: #d5c3cb !important;
     font-family: 'Raleway', sans-serif;
-    font-size: calc(5px + 1vw);
-    color: #f8eeee;
-    text-decoration: none;
-    display: block;
-    
 }
 
-#imagen-footer-gato {
-    width: calc(80px + 1vw);
-    height: calc(80px + 1vw);
+.imagen-card {
+    object-fit: cover;
+    width: 100%;
+    height: calc(250px + 3vw);
+    border: 3px solid #f8eeee;
 }
 
-#text-copyrigth{
-    font-size: calc(5px + 1vw);
-    text-align: center;
+.btn-hobbie {
+    background-color: #b59796;
     color: #f8eeee;
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    vertical-align: bottom;
+    width: calc(150px + 3vw);
 }
+

@@ -7,44 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="icon" href="assets/img/icono.png">
-    <link rel="stylesheet" href="assets/css/stylesIndex.css" />
 
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="assets/css/stylesIndex.css" />
+    <link rel="stylesheet" href="assets/css/stylesHeaderFooter.css" />
     <!--Link de bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <header>
-        <!--Inicio de enlaces de navegación-->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand enlace-header" href="index.html">Portafolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active enlace-header" aria-current="page" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active enlace-header" aria-current="page" href="#">Sobre mi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active enlace-header" aria-current="page"
-                                href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!--Fin de enlaces de navegación-->
-        <div>
-            <img class="imagen-fondo" src="assets/img/fondo.jpg" alt="imagen-fondo" />
-        </div>
-    </header>
+    <div id="cabecera"></div>
 
     <main id="fondo-main">
         <div class='container pt-5'>
@@ -52,8 +26,52 @@
             <article class='row'>
                 <h2 class="col-12 enlace-titulo-inicio">Sobre mi</h2>
                 <p class="col-12 enlace-parrafo-inicio">¡Hola! mi nombre es Katherina Orellana, tengo 24 años.
-                    Actualmente me desempeño como <strong>Desarrolladora Full Stack Java Junior</strong>, pero hace unos
-                    meses me encontraba trabajando en el área de Telecomunicaciones.</p>
+                    Actualmente me desempeño como <strong>Desarrolladora Full Stack Java Junior.</strong><br> Hace unos
+                    meses me encontraba en el área de Telecomunicaciones, pero decidi cambiar de rumbo en busca de
+                    nuevas oportunidades.
+                </p>
+
+                <h2 class="col-12 enlace-titulo-inicio">Hobbies</h2>
+                <div class="row">
+                    <!--Descripción de hobbie 1-->
+                    <button class="btn-hobbie col-4" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                        Leer ♡
+                    </button>
+                    <div class="collapse" id="collapseExample1">
+                        <div class="card card-body">
+                            Este es mi principal hobbie, siempre que tengo tiempo libre intento leer ya sea un libro, un
+                            comic o manga.
+                            Mis géneros literarios preferidos son: misterio, policial, terror, romance, drama, acción y
+                            fantasía.
+                        </div>
+                    </div>
+                    <!--Descripción de hobbie 2-->
+                    <button class="btn-hobbie col-4" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                        Deportes ♡
+                    </button>
+                    <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                            Con respecto a los deportes, he practica natación y pole dance. Por motivos personales he
+                            tenido que dejar de hacer ambos pero planeo retomarlos pronto.
+                        </div>
+                    </div>
+                    <!--Descripción de hobbie 3-->
+                    <button class="btn-hobbie col-4" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                        Aprender coreano ♡
+                    </button>
+
+                    <div class="collapse" id="collapseExample3">
+                        <div class="card card-body">
+                            Poco a poco he ido aprendiendo el idioma coreano, al inicio nacio como un pasatiempo sin
+                            importancia pero luego le comence a dedicar bastante tiempo,
+                            tengo un curso de coreano aprobado y otro en proceso. Actualmente puedo leer el hangul y
+                            comunicarme cotidianamente (mi coreano aún es principiante).
+                        </div>
+                    </div>
+                </div>
             </article>
             <hr />
             <!--Seccion correspondiente a introduccion "curriculum"-->
@@ -79,51 +97,49 @@
                 <div class='col-12'>
                     <p class="enlace-parrafo-inicio">Les presento los proyectos en los que he estado trabajando,
                         aquí pueden encontrar:</p>
-                    <ul class="enlace-parrafo-inicio">
-                        <li><a href="proyecto-marikeiks.html">Proyecto Marikeis</a></li>
-                        <li>Mock-ups</li>
-                        <li>Pokedex</li>
-                    </ul>
+                    <div class="card text-bg-light" style="width: 18rem;">
+                        <img src="assets/img/marikeiks-imagen.jpg" class="card-img-top imagen-card"
+                            alt="imagen-card-marikeiks">
+                        <div class="card-body">
+                            <h5 class="card-title">Marikeiks</h5>
+                            <p class="card-text">En este proyecto se implementa un sistema web para una pastelería. </p>
+                            <a href="proyecto-marikeiks.html" class="btn btn-light">Ver mas...</a>
+                        </div>
+                    </div>
+                    <div class="card text-bg-light" style="width: 18rem;">
+                        <img src="assets/img/mockups-imagen.jpg" class="card-img-top imagen-card"
+                            alt="imagen-card-mockups">
+                        <div class="card-body">
+                            <h5 class="card-title">Mockups</h5>
+                            <p class="card-text">En este proyecto se muestran los mockups con diferentes propuestas para
+                                el proyecto Marikeiks.</p>
+                            <a href="proyecto-mockups.html" class="btn btn-light">Ver mas...</a>
+                        </div>
+                    </div>
+                    <div class="card text-bg-light" style="width: 18rem;">
+                        <img src="assets/img/pokedex-imagen.jpg" class="card-img-top imagen-card"
+                            alt="imagen-card-pokedex">
+                        <div class="card-body">
+                            <h5 class="card-title">Pokedex</h5>
+                            <p class="card-text">En este proyecto realice una pokedex para poder visualizar los detalles
+                                de cada pokemon.</p>
+                            <a href="proyecto-pokedex.html" class="btn btn-light">Ver mas...</a>
+                        </div>
+                    </div>
                 </div>
             </article>
         </div>
     </main>
 
-    <footer class="p-4">
-        <div class="row">
-            <div class="col-3">
-                <img id="imagen-footer-gato" src="assets/img/Gato.png" alt="imagen-footer-gato" />
-            </div>
-            <div class="col-3">
-                <a class="enlace-footer" href="index.html">Inicio</a>
-                <a class="enlace-footer" href="historia.html">Sobre mi</a>
-                <a class="enlace-footer" href="contacto.html">Contacto</a>
-            </div>
-            <div class="col-3">
-                <h5 class="enlace-footer">Proyectos</h5>
-                <a class="enlace-footer" target="_blank" href="proyecto-marikeiks.html"> ○ Marikeiks</a>
-                <a class="enlace-footer" target="_blank" href=""> ○ Mock-ups</a>
-                <a class="enlace-footer" target="_blank" href=""> ○ Pokedex</a>
-            </div>
-            <div class="col-3 mb-4">
-                <h4 class="enlace-footer">Redes sociales</h4>
-                <a class="enlace-footer" target="_blank"
-                    href="https://www.linkedin.com/in/katherina-orellana-silva/">LinkedIn</a>
-                <a class="enlace-footer" target="_blank"
-                    href="https://www.linkedin.com/in/katherina-orellana-silva/">Instagram</a>
-                <a class="enlace-footer" target="_blank"
-                    href="https://www.linkedin.com/in/katherina-orellana-silva/">Facebook</a>
-            </div>
-            <hr>
-            <p id="text-copyrigth">© 2022 Copyright: portafolio-katherina.com</p>
-        </div>
-    </footer>
+    <div id="pie-pagina"></div>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
-
+    <!-- Scripts internos-->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/script-index.js"></script>
 </body>
 
 </html>
