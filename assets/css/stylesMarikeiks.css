@@ -30,7 +30,9 @@ nav a:hover{
 
 @media screen and (max-width: 850px) {
     .imagen-carrusel {
-    height: calc(300px + 1vw);
+        object-fit: cover;
+        width: 100%;
+        height: calc(300px + 1vw);
 }
 }
 
