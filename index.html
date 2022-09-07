@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-    <link rel="icon" type="image-icon" href="assets/img/icono.png">
+    <link rel="icon" href="assets/img/icono.png">
     <link rel="stylesheet" href="assets/css/stylesIndex.css" />
 
     <!--Link de bootstrap-->
@@ -17,7 +17,7 @@
 <body>
     <header>
         <!--Inicio de enlaces de navegación-->
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand enlace-header" href="index.html">Portafolio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -41,19 +41,17 @@
             </div>
         </nav>
         <!--Fin de enlaces de navegación-->
+        <div>
+            <img class="imagen-fondo" src="assets/img/fondo.jpg" alt="imagen-fondo" />
+        </div>
     </header>
 
-    <section>
-        <aside>
-            <img class="imagen-fondo pb-4" src="assets/img/fondo.jpg" alt="imagen-fondo" />
-        </aside>
-
-        <section class='container'>
+    <main id="fondo-main">
+        <div class='container pt-5'>
             <!--Seccion correspondiente a introduccion "sobre mi" -->
             <article class='row'>
                 <h2 class="col-12 enlace-titulo-inicio">Sobre mi</h2>
-                <img class="col-5 pe-1 imagen-sobre-mi" src="assets/img/foto-sobremi.jpeg" alt="" />
-                <p class="col-6 enlace-parrafo-inicio">¡Hola! mi nombre es Katherina Orellana, tengo 24 años.
+                <p class="col-12 enlace-parrafo-inicio">¡Hola! mi nombre es Katherina Orellana, tengo 24 años.
                     Actualmente me desempeño como <strong>Desarrolladora Full Stack Java Junior</strong>, pero hace unos
                     meses me encontraba trabajando en el área de Telecomunicaciones.</p>
             </article>
@@ -62,7 +60,8 @@
             <article class='row'>
                 <h2 class="col-12 enlace-titulo-inicio">Curriculum vitae</h2>
                 <div class='col-12'>
-                    <p class="enlace-parrafo-inicio">A continuación les dejo un resumen de mi curriculum vitae, donde detallo:</p>
+                    <p class="enlace-parrafo-inicio">A continuación les dejo un resumen de mi curriculum vitae, donde
+                        detallo:</p>
                     <ul class="enlace-parrafo-inicio">
                         <li>Resumen profesional</li>
                         <li>Formación académica</li>
@@ -87,14 +86,37 @@
                     </ul>
                 </div>
             </article>
-        </section>
-    </section>
+        </div>
+    </main>
 
-    <footer class="p-3">
-        <a class="enlace-footer" href="https://www.linkedin.com/in/katherina-orellana-silva/">LinkedIn</a>
-        <a class="enlace-footer" href="https://www.linkedin.com/in/katherina-orellana-silva/">Gmail</a>
-        <a class="enlace-footer" href="https://www.linkedin.com/in/katherina-orellana-silva/">Instagram</a>
-        <a class="enlace-footer" href="https://www.linkedin.com/in/katherina-orellana-silva/">Facebook</a>
+    <footer class="p-4">
+        <div class="row">
+            <div class="col-3">
+                <img id="imagen-footer-gato" src="assets/img/Gato.png" alt="imagen-footer-gato" />
+            </div>
+            <div class="col-3">
+                <a class="enlace-footer" href="index.html">Inicio</a>
+                <a class="enlace-footer" href="historia.html">Sobre mi</a>
+                <a class="enlace-footer" href="contacto.html">Contacto</a>
+            </div>
+            <div class="col-3">
+                <h5 class="enlace-footer">Proyectos</h5>
+                <a class="enlace-footer" target="_blank" href="proyecto-marikeiks.html"> ○ Marikeiks</a>
+                <a class="enlace-footer" target="_blank" href=""> ○ Mock-ups</a>
+                <a class="enlace-footer" target="_blank" href=""> ○ Pokedex</a>
+            </div>
+            <div class="col-3 mb-4">
+                <h4 class="enlace-footer">Redes sociales</h4>
+                <a class="enlace-footer" target="_blank"
+                    href="https://www.linkedin.com/in/katherina-orellana-silva/">LinkedIn</a>
+                <a class="enlace-footer" target="_blank"
+                    href="https://www.linkedin.com/in/katherina-orellana-silva/">Instagram</a>
+                <a class="enlace-footer" target="_blank"
+                    href="https://www.linkedin.com/in/katherina-orellana-silva/">Facebook</a>
+            </div>
+            <hr>
+            <p id="text-copyrigth">© 2022 Copyright: portafolio-katherina.com</p>
+        </div>
     </footer>
 
     <!-- JavaScript Bundle with Popper -->
