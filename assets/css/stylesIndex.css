@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Pacifico&family=Raleway&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Marcellus&family=Pacifico&family=Raleway&family=Sacramento&display=swap');
 
 /* font-family: 'Klee One', cursive;
+font-family: 'Marcellus', serif;
 font-family: 'Pacifico', cursive;
 font-family: 'Raleway', sans-serif;
-font-family: 'Sacramento', cursive; */
+font-family: 'Sacramento', cursive;*/
+
 
 /* Contenido cuerpo de página */
 section {
@@ -18,24 +20,49 @@ article {
     text-align: justify;
 }
 
-
-.enlace-titulo-inicio {
-    font-family: 'Sacramento', cursive;
-    font-size: calc(30px + 1vw);
+.titulo-inicio {
+    font-family: 'Marcellus', serif;
+    font-size: calc(15px + 1vw);
     color: #351e1e;
     text-align: center;
 
 }
 
-.enlace-parrafo-inicio {
-    font-family: 'Raleway', sans-serif;
+.parrafo-inicio {
+    font-family: 'Marcellus', serif;
     font-size: calc(7px + 1vw);
     color: #4f3736;
     margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.li-inicio {
+    font-family: 'Marcellus', serif;
+    font-size: calc(6px + 1vw);
+    color: #4f3736;
 }
 
 #fondo-main {
-    background-color: #f8eeee;
+    background: linear-gradient(to bottom, rgba(127, 63, 191, 0.1), white,
+            rgba(191, 63, 63, 0.1),
+            rgba(127, 63, 191, 0.1)), url(../img/fondo.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+#fondo-parrafo-sobremi {
+    background: linear-gradient(to bottom, rgba(25, 35, 15, 0.18),
+            #66535c,
+            rgba(25, 35, 15, 0.18)), url(../img/fondo-flores.jpg);
+    background-size: cover;
+    height: 100%;
+    font-family: 'Marcellus', serif;
+    font-size: calc(7px + 1vw);
+    color: white;
+    padding: 30px;
+    text-align: center;
+
 }
 
 .card {
@@ -49,6 +76,17 @@ article {
     font-family: 'Raleway', sans-serif;
 }
 
+.card:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 2px solid wheat;
+}
+
+.card:hover:before {
+    transform: scale(2.15);
+}
+
 .imagen-card {
     object-fit: cover;
     width: 100%;
@@ -56,12 +94,51 @@ article {
     border: 3px solid #f8eeee;
 }
 
+.card-body {
+    font-family: 'Marcellus', serif;
+}
+
 .btn-hobbie {
-    background-color: #b59796;
-    color: #f8eeee;
-    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(to left, #d5c3cb, #f8eeee, #d5c3cb);
+    color: #351e1e;
+    font-family: 'Marcellus', serif;
     display: inline-block;
-    vertical-align: bottom;
-    width: calc(150px + 3vw);
+    margin-left: 2%;
+    font-size: calc(2px + 1vw);
+    border: 1px solid #cccccc;
+}
+
+.btn-hobbie:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 5px 9px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 3px solid wheat;
+}
+
+.card-hobbies {
+    background-color: #d5c3cb;
+    font-family: 'Raleway', sans-serif;
+    color: #351e1e;
+    border: 1px solid #b59796;
+    border-radius: 5px;
+}
+
+.btn-cv {
+    background: linear-gradient(to left, #d5c3cb, #f8eeee, #d5c3cb);
+    color: #351e1e;
+    font-family: 'Marcellus', serif;
+    margin-left: 2%;
+    font-size: calc(2px + 1vw);
+    border: 1px solid #cccccc;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-cv:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 5px 9px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 3px solid wheat;
 }
 

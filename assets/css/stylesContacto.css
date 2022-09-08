@@ -1,50 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Pacifico&family=Raleway&family=Sacramento&display=swap');
 
-/* Contenido header */
-nav {
-    background-color: #b59796;
+.fondo-contacto {
+    background: linear-gradient(to bottom, rgba(127, 63, 191, 0.1), white,
+            rgba(191, 63, 63, 0.1),
+            rgba(127, 63, 191, 0.1)), url(../img/fondo.jpg);
+    background-size: cover;
+    height: 100%;
+    padding: 3%;
 }
 
-nav a:hover{
-    background-color: wheat;
-    color: #4C1159;
-    border-radius: 10px;
-    transition: all 500ms ease;
-    -webkit-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-}
-
-/*Estilo asociado a los <a>*/
-.enlace-header {
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-}
-
-.imagen-gato {
-    width: 100%;
-    height: calc(500px + 1vw);
-}
-
-/* Contenido footer */
-footer {
-    height: calc(50px + 1vw);
+.fondo-formulario {
+    background: #d5c3cb;
+    padding: 20px;
     display: flex;
-    background-color: #b59796;
-    justify-content:space-around;
+    flex-direction: column;
 }
 
-footer a:hover {
-    background-color: wheat;
-    color:#4f3736;
-    border-radius: 10px;
-    transition: all 500ms ease;
-    -webkit-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
+.row {
+    margin: 0% !important;
 }
 
-.enlace-footer{
-    font-family: 'Raleway', sans-serif;
-    font-size: calc(5px + 1vw);
-    color: #f8eeee;
-    text-decoration: none;
-}

@@ -21,54 +21,123 @@
     <div id="cabecera"></div>
 
     <main id="fondo-main">
-        <div class='container pt-5'>
-            <!--Seccion correspondiente a introduccion "sobre mi" -->
+        <!--Seccion correspondiente a introduccion "sobre mi" -->
+        <div id="fondo-parrafo-sobremi">
+            <h2 class="col-12">Sobre mi</h2>
+            <p class="col-12">¡Hola! mi nombre es Katherina Orellana, tengo 24 años.
+                Actualmente me desempeño como <strong>Desarrolladora Full Stack Java Junior.</strong><br> Hace
+                unos
+                meses me encontraba en el área de Telecomunicaciones, pero decidi cambiar de rumbo en busca de
+                nuevas oportunidades.
+                <br><br>
+                Y hablando algo mas personal, me gustan los gatos.
+            </p>
+        </div>
+        <div class='container pt-5 ps-5'>
             <article class='row'>
-                <h2 class="col-12 enlace-titulo-inicio">Sobre mi</h2>
-                <p class="col-12 enlace-parrafo-inicio">¡Hola! mi nombre es Katherina Orellana, tengo 24 años.
-                    Actualmente me desempeño como <strong>Desarrolladora Full Stack Java Junior.</strong><br> Hace unos
-                    meses me encontraba en el área de Telecomunicaciones, pero decidi cambiar de rumbo en busca de
-                    nuevas oportunidades.
-                </p>
-
-                <h2 class="col-12 enlace-titulo-inicio">Hobbies</h2>
-                <div class="row">
+                <h2 class="col-12 titulo-inicio" id="hobbies">Hobbies</h2>
+                <p class="parrafo-inicio">Selecciona un hobbie para desglosar su descripción.</p>
+                <div class="row justify-content-center mb-5">
                     <!--Descripción de hobbie 1-->
-                    <button class="btn-hobbie col-4" type="button" data-bs-toggle="collapse"
+                    <button class="btn-hobbie col-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
-                        Leer ♡
+                        Lectura ♡
                     </button>
                     <div class="collapse" id="collapseExample1">
-                        <div class="card card-body">
+                        <div class="card-hobbies card-body">
                             Este es mi principal hobbie, siempre que tengo tiempo libre intento leer ya sea un libro, un
                             comic o manga.
-                            Mis géneros literarios preferidos son: misterio, policial, terror, romance, drama, acción y
-                            fantasía.
+                            Mis géneros literarios preferidos son: Misterio, Novela policíaca, Terror, Romance, Drama,
+                            Acción y Fantasía.
+                            <br><br>
+                            Me gustaría dejarles un extracto de texto donde mencionan la importancia de la lectura:
+                            <br><br><i>"La lectura permite escapar de las tensiones cotidianas, bajar el estrés,
+                                desarrollar habilidades cognitivas, activa la memoria a corto y largo plazo, te permite
+                                expandir tu vocabulario, así como mejorar las habilidades expresivas: escritura,
+                                ortografía y síntesis de conceptos."</i>
+                            <br><br>
+                            Durante el año 2022 he leído los siguientes libros:
+                            <ul>
+                                <li>El resplandor, Stephen King.</li>
+                                <li>Doctor sueño, Stephen King.</li>
+                                <li>Siete mentiras, Elizabeth Kay</li>
+                                <li>Violación en Nueva York, Jane Leo.</li>
+                                <li>Still with you, Lily del Pilar.</li>
+                                <li>Still with me, Lily del Pilar.</li>
+                                <li>Una casa en las sombras, Nicolás Pizarro.</li>
+                                <li>La influencer, Ellery Lloyd.</li>
+                                <li>El juego del susurrador, Donato Carrisi.</li>
+                            </ul>
+                            Y me he mantenido actualizada con muchisimos mangas y comics, los cuales leo en la
+                            aplicación de Webtoon.
                         </div>
                     </div>
                     <!--Descripción de hobbie 2-->
-                    <button class="btn-hobbie col-4" type="button" data-bs-toggle="collapse"
+                    <button class="btn-hobbie col-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-                        Deportes ♡
+                        Deporte ♡
                     </button>
                     <div class="collapse" id="collapseExample2">
-                        <div class="card card-body">
+                        <div class="card-hobbies card-body">
                             Con respecto a los deportes, he practica natación y pole dance. Por motivos personales he
                             tenido que dejar de hacer ambos pero planeo retomarlos pronto.
+                            <br>
+                            Para contarles un poco mas sobre el pole dance, me gustaría que leyeran el siguiente
+                            extracto de texto:
+                            <br><br>
+                            <i>"El pole dance reporta mútliples beneficios, se trata de una disciplina que requiere
+                                muchas horas de entrenamiento. Se practica en centros especializados, con grupos
+                                reducidos de personas y un instructor. Siempre es necesario un guía si eres
+                                principiante, puesto que la barra requiere de técnica, y sus movimientos, de mucha
+                                fuerza y una gran coordinación."</i>
+                            <br><br>
+                            Antes de iniciar este deporte les recomiendo encarecidamente que sean acompañados por un
+                            profesional debido a que es muy importante la técnica que se utiliza para cada movimiento.
+                            <br><br>
+                            Y ahora para comentarles un poco sobre la natación:
+                            <br><br>
+                            <i>"Nadar es uno de los pocos ejercicios físicos que benefician al cuerpo globalmente ya que
+                                potencia la fuerza, la resistencia y la flexibilidad al mismo tiempo."</i>
+                            <br><br>
+                            En este aspecto concuerdo totalmente, la natación es un ejercicio bastante completo.
                         </div>
                     </div>
                     <!--Descripción de hobbie 3-->
-                    <button class="btn-hobbie col-4" type="button" data-bs-toggle="collapse"
+                    <button class="btn-hobbie col-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
-                        Aprender coreano ♡
+                        한글 ♡
                     </button>
 
                     <div class="collapse" id="collapseExample3">
-                        <div class="card card-body">
+                        <div class="card-hobbies card-body">
                             Poco a poco he ido aprendiendo el idioma coreano, al inicio nacio como un pasatiempo sin
-                            importancia pero luego le comence a dedicar bastante tiempo,
-                            tengo un curso de coreano aprobado y otro en proceso. Actualmente puedo leer el hangul y
-                            comunicarme cotidianamente (mi coreano aún es principiante).
+                            importancia pero luego le comence a dedicar bastante tiempo. A la fecha poseo un certificado
+                            de un curso llamado "Fist Step Korean" y cuento con otro certificado en proceso. Tambien
+                            para poder avanzar un poco más, comence a practicar a través de DuoLingo.
+                            <br><br>
+                            Actualmente puedo leer el alfabeto coreano o 한글 y comunicarme de forma cotidiana con algunas
+                            frases básicas (mi coreano aún es principiante).
+                            <br><br>
+                            Algo que me gusta de este idioma es su alfabeto ya que lo encuentro bastante sencillo en
+                            comparación a otros. El 한글 está compuesto por 19 consonantes (14 consonantes simples y 5
+                            consonantes dobles) y 21 vocales (6 vocales simples, 4 vocales iotizadas y 11 diptongos) que
+                            se combinan entre sí. Detalle a continuación:
+                            <br><br>
+                            Consonantes simples:
+                            ㄱ (g, k), ㄴ (n), ㄷ (d, t), ㄹ (l, r), ㅁ (m), ㅂ (b, p), ㅅ (s), ㅇ (muda a inicio de sílaba,
+                            'ng' a final de sílaba), ㅈ (j), ㅊ (ch), ㅋ (k), ㅌ (t), ㅍ (p), ㅎ (h).
+                            <br>
+                            Consonantes dobles:
+                            ㄲ (kk), ㄸ (dd, tt), ㅃ (bb, pp), ㅆ (ss), ㅉ (jj)
+                            <br>
+                            Vocales simples:
+                            ㅏ (a), ㅐ(ae, e abierta), ㅔ(e), ㅣ(i) , ㅓ (eo, o abierta), ㅗ (o cerrada), ㅜ (u), ㅡ (eu)
+                            <br>
+                            Vocales iotizadas:
+                            ㅑ (ya), ㅕ (yeo), ㅛ (yo), ㅠ (yu)
+                            <br>
+                            Diptongos:
+                            ㅒ(yae), ㅖ(ye), ㅘ (wa), ㅙ (wae), ㅚ (oe), ㅝ (wo), ㅞ (we), ㅟ (wi), ㅢ (ui)
                         </div>
                     </div>
                 </div>
@@ -76,26 +145,29 @@
             <hr />
             <!--Seccion correspondiente a introduccion "curriculum"-->
             <article class='row'>
-                <h2 class="col-12 enlace-titulo-inicio">Curriculum vitae</h2>
-                <div class='col-12'>
-                    <p class="enlace-parrafo-inicio">A continuación les dejo un resumen de mi curriculum vitae, donde
+                <h2 class="col-12 titulo-inicio mt-5">Curriculum vitae</h2>
+                <div>
+                    <p class="parrafo-inicio">A continuación les dejo un resumen de mi curriculum vitae, donde
                         detallo:</p>
-                    <ul class="enlace-parrafo-inicio">
-                        <li>Resumen profesional</li>
-                        <li>Formación académica</li>
-                        <li>Experiencia laboral</li>
-                        <li>Habilidades técnicas</li>
-                        <li>Habilidades blandas</li>
-                        <li>Cursos</li>
+                    <ul>
+                        <li class="li-inicio">Resumen profesional</li>
+                        <li class="li-inicio">Formación académica</li>
+                        <li class="li-inicio">Experiencia laboral</li>
+                        <li class="li-inicio">Habilidades técnicas</li>
+                        <li class="li-inicio">Habilidades blandas</li>
+                        <li class="li-inicio">Cursos</li>
                     </ul>
+                    <div class="d-flex justify-content-center">
+                        <a href="curriculum.html" class="btn-cv">Ir a CV</a>
+                    </div>
                 </div>
             </article>
             <hr />
             <!--Seccion correspondiente a introduccion "proyectos"-->
             <article class='row pb-5'>
-                <h2 class="col-12 enlace-titulo-inicio">Proyectos personales</h2>
+                <h2 class="col-12 titulo-inicio mt-5">Proyectos personales</h2>
                 <div class='col-12'>
-                    <p class="enlace-parrafo-inicio">Les presento los proyectos en los que he estado trabajando,
+                    <p class="parrafo-inicio">Les presento los proyectos en los que he estado trabajando,
                         aquí pueden encontrar:</p>
                     <div class="card text-bg-light" style="width: 18rem;">
                         <img src="assets/img/marikeiks-imagen.jpg" class="card-img-top imagen-card"
@@ -113,7 +185,7 @@
                             <h5 class="card-title">Mockups</h5>
                             <p class="card-text">En este proyecto se muestran los mockups con diferentes propuestas para
                                 el proyecto Marikeiks.</p>
-                            <a href="proyecto-mockups.html" class="btn btn-light">Ver mas...</a>
+                            <a href="proyecto-mockups.html"  class="btn btn-light">Ver mas...</a>
                         </div>
                     </div>
                     <div class="card text-bg-light" style="width: 18rem;">

@@ -1,41 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Pacifico&family=Raleway&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Marcellus&family=Pacifico&family=Raleway&family=Sacramento&display=swap');
 
-/* Contenido header */
-nav {
-    background-color: #b59796;
+/* font-family: 'Klee One', cursive;
+font-family: 'Marcellus', serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Sacramento', cursive;*/
+
+.fondo-marikeiks {
+    background: linear-gradient(to bottom, rgba(127, 63, 191, 0.1), white,
+            rgba(191, 63, 63, 0.1),
+            rgba(127, 63, 191, 0.1)), url(../img/fondo.jpg);
+    background-size: cover;
+    height: 100%;
+    padding: 5%;
 }
 
-nav a:hover{
-    background-color: wheat;
-    color: #4C1159;
-    border-radius: 10px;
-    transition: all 500ms ease;
-    -webkit-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-}
-
-/*Estilo asociado a los <a>*/
-.enlace-header {
+.textoSpan {
     text-decoration: none;
-    font-family: 'Raleway', sans-serif;
+    color: #351e1e;
+    font-family: 'Marcellus', serif;
 }
-
-
-/* Imagenes de historia */
-.imagen-carrusel {
-    object-fit: cover;
-    width: 100%;
-    height: calc(800px + 1vw);
-}
-
-@media screen and (max-width: 850px) {
-    .imagen-carrusel {
-        object-fit: cover;
-        width: 100%;
-        height: calc(300px + 1vw);
-}
-}
-
 
 .logo2{
     vertical-align: middle;
@@ -43,26 +27,25 @@ nav a:hover{
     height: 50px; 
 }
 
-/* Contenido footer */
-footer {
-    height: calc(50px + 1vw);
-    display: flex;
-    background-color: #b59796;
-    justify-content:space-around;
+
+/* Imagenes de historia */
+.imagen-carrusel {
+    object-fit: cover;
+    width: 100%;
 }
 
-footer a:hover {
-    background-color: wheat;
-    color:#4f3736;
-    border-radius: 10px;
-    transition: all 500ms ease;
-    -webkit-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
+.titulo-proyecto-m{
+    font-family: 'Marcellus', serif;
+    font-size: calc(10px + 1vw);
+    color:midnightblue;
+    text-align: center;
 }
 
-.enlace-footer{
-    font-family: 'Raleway', sans-serif;
+.parrafo-proyecto-m{
+    font-family: 'Marcellus', serif;
     font-size: calc(5px + 1vw);
-    color: #f8eeee;
-    text-decoration: none;
+    color: #4f3736;
+    margin-bottom: 30px;
+    text-align: justify;
+    padding-left: 2%;
 }
