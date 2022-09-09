@@ -7,6 +7,7 @@ El siguiente proyecto muestra mi portafolio personal, en donde les comparto info
 1. Bootstrap v5.2
 1. JavaScript 
 1. JQuery
+1. Conexión a base de datos Firebase.
 
 # Participantes:
 Este proyecto esta siendo trabajado individualmente.
