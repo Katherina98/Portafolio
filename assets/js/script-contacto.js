@@ -1,4 +1,4 @@
-$(document).ready(function () {
+window.addEventListener('DOMContentLoaded', (e) => {
     /**Cargamos los html de header y footer en la página a través de load.
      * Debemos indicar el id (#...) de donde queremos cargar los archivos.
      */
