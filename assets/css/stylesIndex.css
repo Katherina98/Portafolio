@@ -22,7 +22,7 @@ article {
 
 .titulo-inicio {
     font-family: 'Marcellus', serif;
-    font-size: calc(15px + 1vw);
+    font-size: calc(16px + 1vw);
     color: #351e1e;
     text-align: center;
 
@@ -30,7 +30,7 @@ article {
 
 .parrafo-inicio {
     font-family: 'Marcellus', serif;
-    font-size: calc(7px + 1vw);
+    font-size: calc(9px + 1vw);
     color: #4f3736;
     margin-bottom: 30px;
     text-align: center;
@@ -39,7 +39,7 @@ article {
 
 .li-inicio {
     font-family: 'Marcellus', serif;
-    font-size: calc(6px + 1vw);
+    font-size: calc(7px + 1vw);
     color: #4f3736;
 }
 
@@ -58,7 +58,7 @@ article {
     background-size: cover;
     height: 100%;
     font-family: 'Marcellus', serif;
-    font-size: calc(7px + 1vw);
+    font-size: calc(8px + 1vw);
     color: white;
     padding: 30px;
     text-align: center;
@@ -104,7 +104,7 @@ article {
     font-family: 'Marcellus', serif;
     display: inline-block;
     margin-left: 2%;
-    font-size: calc(2px + 1vw);
+    font-size: calc(6px + 1vw);
     border: 1px solid #cccccc;
 }
 
@@ -128,7 +128,7 @@ article {
     color: #351e1e;
     font-family: 'Marcellus', serif;
     margin-left: 2%;
-    font-size: calc(2px + 1vw);
+    font-size: calc(6px + 1vw);
     border: 1px solid #cccccc;
     width: 200px;
     text-align: center;
