@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Klee+One:wght@600&family=Marcellus&family=Pacifico&family=Raleway&family=Sacramento&display=swap');
+
+section.bg-section-left hr {
+    color: white;
+    width: 100%;
+    height: 5px;
+}
+
+section.bg-section-rigth hr {
+    color: black;
+    width: 100%;
+    height: 5px;
+}
+
+.fondo-general {
+    background: linear-gradient(to bottom, rgba(127, 63, 191, 0.1), white,
+            rgba(191, 63, 63, 0.1),
+            rgba(127, 63, 191, 0.1)), url(../img/fondo.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+.contenedor-cv {
+    display: flex;
+    flex-direction: row;
+}
+
+article {
+    padding-bottom: 1%;
+}
+
+/*Sección correspondiente al lado izquierdo*/
+#bg-section-left {
+    background-color: #BD8D94;
+    order:1;
+    padding: 3%;
+}
+
+.tittle-section-left {
+    color: #fff8fb;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: calc(8px + 1vw);
+}
+
+.tittle-secondary-left {
+    color:#8f6277;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: calc(6px + 1vw);
+    font-weight: 900;
+
+}
+
+.text-white-subtitle-left {
+    color:whitesmoke;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: calc(5px + 1vw);
+    font-weight: 600;
+
+}
+
+.text-white {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: calc(5px + 1vw);
+}
+
+.no-list{
+    display: flex;
+}
+
+.image-social-media {
+    height: calc(10px + 1vw);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+
+.image-social-media:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 5px 9px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 2px solid wheat;
+    border-radius: 10px;
+}
+
+
+
+/*Enlace de linkedin en sección de contacto*/
+#enlace-linkedin {
+    text-decoration: none;
+    color: white;
+    font-size: calc(5px + 1vw);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#enlace-linkedin:hover {
+    background-color: wheat;
+    color: black;
+    border-radius: 10px;
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+
+/*Sección correspondiente al lado derecho*/
+#bg-section-rigth {
+    background-color: whitesmoke;
+    order:2;
+    padding: 3%;
+}
+
+#tittle-name {
+    color: #BD8D94;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: calc(14px + 2vw); 
+    font-weight: 600;
+}
+
+.tittle-section-rigth {
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: calc(8px + 1vw);
+    padding-bottom: 2%;
+}
+
+.tittle-secondary-rigth {
+    color:#BD8D94;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: calc(6px + 1vw);
+    font-weight: 600;
+
+}
+
+.text-black-subtitle-rigth {
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: calc(5px + 1vw);
+    font-weight:600;
+
+}
+
+.text-black {
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: calc(5px + 1vw);
+}
