@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Marcellus&family=Pacifico&family=Raleway&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Klee+One:wght@600&family=Marcellus&family=Pacifico&family=Raleway&family=Sacramento&display=swap');
 
-/* font-family: 'Klee One', cursive;
+/* tipo de letras de google fonts seleccionadas 
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Klee One', cursive;
 font-family: 'Marcellus', serif;
 font-family: 'Pacifico', cursive;
 font-family: 'Raleway', sans-serif;
@@ -21,7 +23,7 @@ article {
 }
 
 .titulo-inicio {
-    font-family: 'Marcellus', serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: calc(16px + 1vw);
     color: #351e1e;
     text-align: center;
@@ -29,7 +31,7 @@ article {
 }
 
 .parrafo-inicio {
-    font-family: 'Marcellus', serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: calc(9px + 1vw);
     color: #4f3736;
     margin-bottom: 30px;
@@ -38,7 +40,7 @@ article {
 
 
 .li-inicio {
-    font-family: 'Marcellus', serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: calc(7px + 1vw);
     color: #4f3736;
 }
@@ -54,26 +56,80 @@ article {
 #fondo-parrafo-sobremi {
     background: linear-gradient(to bottom, rgba(25, 35, 15, 0.18),
             #66535c,
-            rgba(25, 35, 15, 0.18)), url(../img/fondo-flores.jpg);
-    background-size: cover;
+            rgba(25, 35, 15, 0.18)), url(../img/fondo-sobremi.gif);
+    background-size:cover;
+    background-repeat: no-repeat;
     height: 100%;
-    font-family: 'Marcellus', serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: calc(8px + 1vw);
     color: white;
-    padding: 30px;
+    padding: 5%;
     text-align: center;
 
 }
 
+
+/*Sección de hobbies*/
+.btn-hobbie {
+    background: linear-gradient(to left, #b59796, #f8eeee, #b59796);
+    color: #351e1e;
+    font-family: 'Josefin Sans', sans-serif;
+    display: inline-block;
+    margin-left: 2%;
+    font-size: calc(6px + 1vw);
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+}
+
+.btn-hobbie:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 5px 9px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 3px solid wheat;
+}
+
+.card-hobbies {
+    background-color: #d5c3cb;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: calc(6px + 1vw);
+    color: #351e1e;
+    border: 1px solid #b59796;
+    border-radius: 10px;
+}
+
+/*Sección de cv*/
+.btn-cv {
+    background: linear-gradient(to left, #b59796, #f8eeee, #b59796);
+    color: #351e1e;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 2%;
+    font-size: calc(10px + 1vw);
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-cv:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 5px 9px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 3px solid wheat;
+}
+
+/*Sección de proyectos*/
 .card {
     float: left;
     padding: 10px;
-    height: calc(450px + 3vw);
+    width: calc(250px + 1vw); 
+    height: calc(450px + 1vw);
     margin-left: 10%;
     margin-bottom: 50px;
-    color: #66535c;
-    background-color: #d5c3cb !important;
+    color: white;
+    background-color: #b59796 !important;
     font-family: 'Raleway', sans-serif;
+    font-size: 80%;
 }
 
 .card:hover {
@@ -95,50 +151,5 @@ article {
 }
 
 .card-body {
-    font-family: 'Marcellus', serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
-
-.btn-hobbie {
-    background: linear-gradient(to left, #d5c3cb, #f8eeee, #d5c3cb);
-    color: #351e1e;
-    font-family: 'Marcellus', serif;
-    display: inline-block;
-    margin-left: 2%;
-    font-size: calc(6px + 1vw);
-    border: 1px solid #cccccc;
-}
-
-.btn-hobbie:hover {
-    transition: all 0.2s ease-out;
-    box-shadow: 0px 5px 9px rgba(38, 38, 38, 0.2);
-    top: -4px;
-    border: 3px solid wheat;
-}
-
-.card-hobbies {
-    background-color: #d5c3cb;
-    font-family: 'Raleway', sans-serif;
-    color: #351e1e;
-    border: 1px solid #b59796;
-    border-radius: 5px;
-}
-
-.btn-cv {
-    background: linear-gradient(to left, #d5c3cb, #f8eeee, #d5c3cb);
-    color: #351e1e;
-    font-family: 'Marcellus', serif;
-    margin-left: 2%;
-    font-size: calc(6px + 1vw);
-    border: 1px solid #cccccc;
-    width: 200px;
-    text-align: center;
-    text-decoration: none;
-}
-
-.btn-cv:hover {
-    transition: all 0.2s ease-out;
-    box-shadow: 0px 5px 9px rgba(38, 38, 38, 0.2);
-    top: -4px;
-    border: 3px solid wheat;
-}
-
