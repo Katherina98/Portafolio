@@ -13,7 +13,7 @@ body {
 
 .mostrarPoke {
     width: calc(100px + 1vw);
-    background: url("../img/fondo.jfif");
+    background: url("../img/fondo.gif");
     border: solid gold;
     display: inline-block;
     font-family: 'Silkscreen', cursive;
