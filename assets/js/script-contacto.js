@@ -5,41 +5,38 @@ window.addEventListener('DOMContentLoaded', (e) => {
     $("#cabecera").load("parts/header.html");
     $("#pie-pagina").load("parts/footer.html");
 
+    /**Creamos la variable form a través del id del formulario, con ello podemos utilizar posteriormente la función reset.*/
+    let form = document.getElementById('form-id');
     /**Con esta variable le agregamos la funcionalidad al boton, permitiendo enviar datos a través del click*/
     let boton = document.getElementById("btn-enviar");
     boton.addEventListener("click", (ev) => {
         /**Probar el código, si ocurre un evento inesperado ejecutar catch */
         try {
-            /**Creamos variables para recuperar los valores del formulario a través de su id*/
-            let nombreApellido = document.getElementById("nombre-apellido").value;
-            if (nombreApellido.length < 5) {
-                throw new Error("Ingrese su nombre completo, debe incluir mínimo 5 caracteres.");
-            }
-            let email = document.getElementById("correo").value;
-            if (email.length < 1) {
-                throw new Error("Ingrese un correo.");
-            }
-            let mensajeText = document.getElementById("textarea1").value;
-            if (mensajeText.length < 1) {
-                throw new Error("Ingrese un mensaje especificando su motivo.");
-            }
-            /**En este caso, llamamos a la función getConocido y getMotivo para poder tomar un valor en particular*/
+            /**En este caso, llamamos a la funciones para poder tomar un valor en particular*/
+            let nombreApellido = getNombreApellido();
+            let email = getCorreo();
             let conocido = getConocido();
             let motivo = getMotivo();
+            let mensaje = getMensaje();
 
             let contacto = {
                 nombre_completo: nombreApellido,
                 email,
                 conocido,
                 motivo,
-                mensajeText
+                mensaje
             };
             console.dir(contacto);
+            /**Linea 34: llamamos a la función guardar contacto.
+             * Linea 35: Reseteamos el formulario para que quede limpio.
+             * Linea 36: En caso de que quede un mensaje de error, ocultamos el bloque nuevamente.
+             */
             guardarContacto(contacto);
+            form.reset();
+            document.getElementById("form-mensaje-error").style.display = "none";
         } catch (e) {
             mostrarError(e.message);
         }
-        
     });
 
     /***************************************************************************/
@@ -53,7 +50,39 @@ window.addEventListener('DOMContentLoaded', (e) => {
             body: JSON.stringify(contacto)
         });
         const data = await respuesta.json();
+        /**Al completar el proceso de guardar al observador, le enviamos un mensaje de éxito. */
         swal("Gracias", "Su mensaje fue enviado correctamente", "success");
+    }
+
+    /**Creamos funciones para recuperar los valores del formulario a través de su id o name*/
+    /***************************************************************************/
+
+    function getNombreApellido() {
+        /**Obtenemos el valor del input a través del id.
+         * Generamos una condicional para evaluar un posible error.
+         */
+        let inputNombreApellido = document.getElementById("nombre-apellido").value;
+
+        if (inputNombreApellido.length < 1) {
+            throw new Error("Ingrese su nombre completo, debe incluir mínimo 5 caracteres.")
+            /* Si el largo del texto ingresado es menor a 1 nos muestra un mensaje de error */
+        }
+        return inputNombreApellido;
+    }
+
+    /***************************************************************************/
+
+    function getCorreo() {
+        /**Obtenemos el valor del input a través del id.
+         * Generamos una condicional para evaluar un posible error.
+         */
+        let inputCorreo = document.getElementById("correo").value;
+
+        if (inputCorreo.length < 1) {
+            throw new Error("Ingrese un correo.")
+            /* Si el largo del texto ingresado es menor a 1 nos muestra un mensaje de error */
+        }
+        return inputCorreo;
     }
 
     /***************************************************************************/
@@ -71,8 +100,8 @@ window.addEventListener('DOMContentLoaded', (e) => {
          * Se puede seleccionar mas de uno.
          */
         for (let i = 0; i < inputMotivos.length; i++) {
-            const motivo = inputMotivos[i].value;
-            arrMotivos.push(motivo);
+            const motivos = inputMotivos[i].value;
+            arrMotivos.push(motivos);
         }
 
         if (inputMotivos.length < 1) {
@@ -99,17 +128,34 @@ window.addEventListener('DOMContentLoaded', (e) => {
 
     /***************************************************************************/
 
-    /**Esta función nos permite mostrar un mensaje, cuando hacemos uso de la misma en la sección de catch.
-         * En este caso, la utilizamos en los selectores y radios de formulario.
+    function getMensaje() {
+        /**Obtenemos el valor del input a través del id.
+         * Generamos una condicional para evaluar un posible error.
          */
+        let inputMensaje = document.getElementById("textarea1").value;
+
+        if (inputMensaje.length < 1) {
+            throw new Error("Ingrese un mensaje especificando su motivo de contacto.")
+            /* Si el largo del texto ingresado es menor a 1 nos muestra un mensaje de error */
+        }
+        return inputMensaje;
+
+    }
+
+    /***************************************************************************/
+
+    /**Esta función nos permite mostrar un mensaje, cuando hacemos uso de la misma en la sección de catch.*/
     function mostrarError(mensajeDeError) {
-        /**En esta linea podemos modificar el estado del style de un elemento, a través del document.getElementById*/
+        /**En esta linea podemos modificar el estado del style de un elemento, a través del document.getElementById
+         * En este caso, tenemos un div el cual se encuentra oculto, al cambiar el style a "block" lo dejamos visible al usuario.
+        */
         document.getElementById("form-mensaje-error").style.display = "block";
         /**Con document.querySelector podemos recuperar a través del CSS, en este caso utilizamos el id (#...)
          * Le indicamos a través del id la ubicación donde queremos crear un nodo, en este caso en la etiqueta <ul>
         */
         const ul = document.querySelector("#form-mensaje-error ul");
         /**Con document.createElement creamos un elemento, en este caso una etiqueta HTML <li> */
+        ul.innerHTML = "";
         const li = document.createElement("li");
         /**Con document.createTextNode creamos un nodo interno, en este caso sería el contenido de la etiqueta <li> */
         const liText = document.createTextNode(mensajeDeError);

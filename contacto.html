@@ -17,94 +17,107 @@
 </head>
 
 <body>
+    <!--Mediante un archivo JavaScript se asocia el documento header.html a este div.-->
     <div id="cabecera"></div>
 
-    <main class="contenedor-contact justify-content-center">
-            <section id="contenedor-section-left">
-                <article>
-                    <h4 class="tittle-section-left-c">Redes sociales</h4>
-                    <div class="text-contact">
-                        <img class="image-social-media-contact" src="assets/img/llamada-telefonica.png"
-                            alt="Telefono" />
-                        <span class="text-contact">
-                            +569 57763254</span>
-                    </div>
-                    <div class="text-contact">
-                        <img class="image-social-media-contact" src="assets/img/gmail.png" alt="Gmail" />
-                        <span class="text-contact">
-                            katherinaorellana.s@gmail.com</span>
-                    </div>
-                    <div class="text-contact">
-                        <a id="enlace-linkedin-c" href="https://www.linkedin.com/in/katherina-orellana-silva/"
-                            target="_blank"><img class="image-social-media-contact" src="assets/img/linkedin.png" alt="LinkedIn" /> https://www.linkedin.com/in/katherina-orellana-silva/</a>
-                    </div>
-                    <div class="text-contact">
-                        <a id="enlace-linkedin-c" href="https://www.linkedin.com/in/katherina-orellana-silva/"
-                            target="_blank"><img class="image-social-media-contact" src="assets/img/instagram.png" alt="Instagram" />_ks_os_</a>
-                    </div>
-                    <div class="text-contact">
-                        <a id="enlace-linkedin-c" href="https://www.linkedin.com/in/katherina-orellana-silva/"
-                            target="_blank"><img class="image-social-media-contact" src="assets/img/facebook.png" alt="Facebook" /> Katherina Orellana
-                        </a>
-                    </div>
-                </article>
-                <article>
+    <!--Contenedor principal de la página contacto-->
+    <main class="contact-container justify-content-center">
 
-                </article>
-            </section>
-
-            <section id="contenedor-form">
-                <!--Bloque de mensaje de error-->
-                <div id="form-mensaje-error" class="alert alert-danger" role="alert" style="display: none;">
-                    <ul></ul>
+        <!--Sección correspondiente a la parte izquierda de la página contacto-->
+        <section id="left-section-container">
+            <h3 class="left-section-tittle-contact">Un gusto, puedes comunicarte conmigo a través de mis redes sociales.</h3>
+            <!--Sección de información de redes sociales-->
+            <article>
+                <h6 style="color: pink;">Si das clic a un link te dirigirá directamente.</h6>
+                <div class="text-contact">
+                    <img class="image-social-media-contact" src="assets/img/llamada-telefonica.png" alt="Telefono" />
+                    <span class="text-contact">
+                        +569 57763254</span>
                 </div>
+                <div class="text-contact">
+                    <img class="image-social-media-contact" src="assets/img/gmail.png" alt="Gmail" />
+                    <span class="text-contact">
+                        katherinaorellana.s@gmail.com</span>
+                </div>
+                <div class="text-contact">
+                    <a class="link-linkedin-contact" href="https://www.linkedin.com/in/katherina-orellana-silva/"
+                        target="_blank"><img class="image-social-media-contact" src="assets/img/linkedin.png"
+                            alt="LinkedIn" /> https://www.linkedin.com/in/katherina-orellana-silva/</a>
+                </div>
+                <div class="text-contact">
+                    <a class="link-linkedin-contact" href="https://www.linkedin.com/in/katherina-orellana-silva/"
+                        target="_blank"><img class="image-social-media-contact" src="assets/img/instagram.png"
+                            alt="Instagram" />_ks_os_</a>
+                </div>
+                <div class="text-contact">
+                    <a class="link-linkedin-contact" href="https://www.linkedin.com/in/katherina-orellana-silva/"
+                        target="_blank"><img class="image-social-media-contact" src="assets/img/facebook.png"
+                            alt="Facebook" /> Katherina Orellana
+                    </a>
+                </div>
+            </article>
 
-                <!--Inicio de formulario de contacto-->
-                <form action="#" method="post">
-                    <h3 id="tittle-form" style="text-align: center;">Formulario de contacto</h3>
-                    <label class="form-label form-content" for="nombre-apellido">Nombre y apellido</label>
-                    <input class="form-control form-content" type="text" id="nombre-apellido" name="nombre-apellido" />
-                    <br><br>
-                    <label class="form-label form-content" for="correo">Correo electrónico</label>
-                    <input class="form-control form-content" type="email" id="correo" name="correo" />
-                    <br><br>
-                    <h5 class="form-content">¿Nos conocemos?</h5>
-                    <br>
-                    <input class="form-check-input form-content" type="radio" id="positivo" name="conocido"
-                        value="si" />
-                    <label class="form-check-label form-content" for="positivo">Si</label>
-                    <br>
-                    <input class="form-check-input form-content" type="radio" id="negativo" name="conocido"
-                        value="no" />
-                    <label class="form-check-label form-content" for="negativo">No</label>
-                    <br><br>
-                    <h5 class="form-content">Motivo de contacto:</h5>
-                    <br>
-                    <input class="form-check-input form-content" type="checkbox" id="educativo" name="motivo"
-                        value="educativo" />
-                    <label class="form-check-label form-content" for="educativo">Educativo</label>
-                    <br>
-                    <input class="form-check-input form-content" type="checkbox" id="personal" name="motivo"
-                        value="personal" />
-                    <label class="form-check-label form-content" for="personal">Personal</label>
-                    <br>
-                    <input class="form-check-input form-content" type="checkbox" id="trabajo" name="motivo"
-                        value="trabajo" />
-                    <label class="form-check-label form-content" for="trabajo">Trabajo</label>
-                    <br><br>
-                    <label for="textarea1" class="form-label form-content">Mensaje:</label>
-                    <textarea class="form-control form-content" id="textarea1" cols="100" rows="5" minlength="5"
-                        maxlength="100" placeholder="Escriba su mensaje.."></textarea>
-                    <br><br>
-                    <div class="d-flex justify-content-end">
-                        <button class="btn btn-dark me-2" id="btn-enviar" type="button">Enviar</button>
-                        <input class="btn btn-warning" type="reset" value="Limpiar">
-                    </div>
-                </form>
-                <!--Fin de formulario de contacto-->
-            </section>
+            <!--Sección de imagen decorativa-->
+            <article>
+                <h3 class="text-contact mt-5">¡Espero que tengan un buen día!</h3>
+                <img id="left-section-image" src="assets/img/auto.jpg" alt="imagen-auto" />
+            </article>
+        </section>
+
+        <!--Sección correspondiente a "formulario de contacto"-->
+        <section id="form-container">
+
+            <!--Bloque de mensaje de error-->
+            <div id="form-mensaje-error" class="alert alert-danger" role="alert" style="display: none;">
+                <ul></ul>
+            </div>
+
+            <!--Inicio de formulario de contacto-->
+            <form id="form-id" action="#" method="post">
+                <h3 id="form-tittle" style="text-align: center;">Formulario de contacto</h3>
+                <hr>
+                <label class="form-label form-content" for="nombre-apellido">Nombre y apellido</label>
+                <input class="form-control form-content" type="text" id="nombre-apellido" name="nombre-apellido" />
+                <br><br>
+                <label class="form-label form-content" for="correo">Correo electrónico</label>
+                <input class="form-control form-content" type="email" id="correo" name="correo" />
+                <br><br>
+                <h5 class="form-content">¿Nos conocemos?</h5>
+                <br>
+                <input class="form-check-input form-content" type="radio" id="positivo" name="conocido" value="si" />
+                <label class="form-check-label form-content" for="positivo">Si</label>
+                <br>
+                <input class="form-check-input form-content" type="radio" id="negativo" name="conocido" value="no" />
+                <label class="form-check-label form-content" for="negativo">No</label>
+                <br><br>
+                <h5 class="form-content">Motivo de contacto:</h5>
+                <br>
+                <input class="form-check-input form-content" type="checkbox" id="educativo" name="motivo"
+                    value="educativo" />
+                <label class="form-check-label form-content" for="educativo">Educativo</label>
+                <br>
+                <input class="form-check-input form-content" type="checkbox" id="personal" name="motivo"
+                    value="personal" />
+                <label class="form-check-label form-content" for="personal">Personal</label>
+                <br>
+                <input class="form-check-input form-content" type="checkbox" id="trabajo" name="motivo"
+                    value="trabajo" />
+                <label class="form-check-label form-content" for="trabajo">Trabajo</label>
+                <br><br>
+                <label for="textarea1" class="form-label form-content">Mensaje:</label>
+                <textarea class="form-control form-content" id="textarea1" cols="100" rows="5" minlength="5"
+                    maxlength="100" placeholder="Escriba su mensaje.."></textarea>
+                <br><br>
+                <div class="d-flex justify-content-end">
+                    <button class="btn btn-dark me-2" id="btn-enviar" type="button">Enviar</button>
+                    <input class="btn btn-warning" type="reset" value="Limpiar">
+                </div>
+            </form>
+            <!--Fin de formulario de contacto-->
+        </section>
     </main>
 
+    <!--Mediante un archivo JavaScript se asocia el documento footer.html a este div.-->
     <div id="pie-pagina"></div>
 
     <!-- JavaScript Bundle with Popper -->
@@ -112,8 +125,9 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
 
-
+    <!-- JavaScript para ejecutar la alerta-->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- JavaScript internos-->
     <script src="assets/js/jquery-3.6.1.min.js"></script>
     <script src="assets/js/script-contacto.js"></script>
 </body>
