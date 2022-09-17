@@ -10,38 +10,43 @@
     <!-- CSS Personalizado -->
     <link rel="stylesheet" href="assets/css/stylesIndex.css" />
     <link rel="stylesheet" href="assets/css/stylesHeaderFooter.css" />
+
     <!--Link de bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
-    <!--Mediante un archivo JavaScript se asocia el documento footer.html a este div.-->
+    <!--Mediante un archivo JavaScript se asocia el documento header.html a este div.-->
     <div id="cabecera"></div>
 
-    <main id="fondo-main">
-        <!--Seccion correspondiente a introduccion "sobre mi" -->
-        <div id="fondo-parrafo-sobremi">
-            <h2 class="col-12">Sobre mi</h2>
+    <!--Contenedor principal de la página index-->
+    <main id="main-background">
+        <!--Seccion correspondiente a presentación "sobre mi" -->
+        <div id="paragraph-background-aboutme">
+            <h2 class="col-12">Un poco sobre mi.</h2>
             <p class="col-12">¡Hola! mi nombre es Katherina Orellana, tengo 24 años.
                 Actualmente me desempeño como <strong>Desarrolladora Full Stack Java Junior.</strong><br> Hace
                 unos
-                meses me encontraba en el área de Telecomunicaciones, pero decidi cambiar de rumbo en busca de
+                meses me encontraba en el área de Telecomunicaciones, pero decidí cambiar de rumbo en busca de
                 nuevas oportunidades.
                 <br><br>
                 Actualmente vivo con mi pareja y mis tres gatos ♡.
             </p>
         </div>
+
+        <!--Seccion correspondiente a presentación "hobbies" -->
         <div class='container pt-5 ps-5'>
             <article class='row'>
-                <h2 class="col-12 titulo-inicio" id="hobbies">Hobbies</h2>
-                <p class="parrafo-inicio">Selecciona un hobbie para desglosar su descripción.</p>
+                <h2 class="col-12 index-tittle" id="hobbies">Hobbies</h2>
+                <p class="index-paragraph">Selecciona un hobbie para desglosar su descripción.</p>
                 <div class="row justify-content-center mb-5">
-                    <!--Descripción de hobbie 1-->
+                    <!--Boton desplegable de hobbie 1-->
                     <button class="btn-hobbie col-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
                         Lectura ♡
                     </button>
+                    <!--Descripción de hobbie 1-->
                     <div class="collapse" id="collapseExample1">
                         <div class="card-hobbies card-body">
                             Este es mi principal hobbie, siempre que tengo tiempo libre intento leer ya sea un libro, un
@@ -71,11 +76,13 @@
                             aplicación de Webtoon.
                         </div>
                     </div>
-                    <!--Descripción de hobbie 2-->
+                    
+                    <!--Boton desplegable de hobbie 2-->
                     <button class="btn-hobbie col-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
                         Deporte ♡
                     </button>
+                    <!--Descripción de hobbie 2-->
                     <div class="collapse" id="collapseExample2">
                         <div class="card-hobbies card-body">
                             Con respecto a los deportes, he practicado natación y pole dance. Por motivos personales he
@@ -101,12 +108,12 @@
                             En este aspecto concuerdo totalmente, la natación es un ejercicio bastante completo.
                         </div>
                     </div>
-                    <!--Descripción de hobbie 3-->
+                    <!--Boton desplegable de hobbie 3-->
                     <button class="btn-hobbie col-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
                         한글 ♡
                     </button>
-
+                    <!--Descripción de hobbie 3-->
                     <div class="collapse" id="collapseExample3">
                         <div class="card-hobbies card-body">
                             Poco a poco he ido aprendiendo el idioma coreano, al inicio nacio como un pasatiempo sin
@@ -142,44 +149,52 @@
                 </div>
             </article>
             <hr />
-            <!--Seccion correspondiente a introduccion "curriculum"-->
+
+            <!--Seccion correspondiente a presentación de "curriculum"-->
             <article class='row'>
-                <h2 class="col-12 titulo-inicio mt-5">Curriculum vitae</h2>
+                <h2 class="col-12 index-tittle mt-5">Curriculum vitae</h2>
                 <div>
-                    <p class="parrafo-inicio">A continuación les dejo un resumen de mi curriculum vitae, donde
+                    <p class="index-paragraph">A continuación les dejo un resumen de mi curriculum vitae, donde
                         detallo:</p>
+                    <!--Listado de secciones en cv-->
                     <ul>
-                        <li class="li-inicio">Resumen profesional</li>
-                        <li class="li-inicio">Formación académica</li>
-                        <li class="li-inicio">Experiencia laboral</li>
-                        <li class="li-inicio">Habilidades técnicas</li>
-                        <li class="li-inicio">Habilidades blandas</li>
-                        <li class="li-inicio">Cursos</li>
+                        <li class="cv-li">Resumen profesional</li>
+                        <li class="cv-li">Formación académica</li>
+                        <li class="cv-li">Experiencia laboral</li>
+                        <li class="cv-li">Habilidades técnicas</li>
+                        <li class="cv-li">Habilidades blandas</li>
+                        <li class="cv-li">Cursos</li>
                     </ul>
+                    <!--Boton para acceder de forma directa al html de cv-->
                     <div class="d-flex justify-content-center">
                         <a href="curriculum.html" class="btn-cv">Ir a CV</a>
                     </div>
                 </div>
             </article>
             <hr />
-            <!--Seccion correspondiente a introduccion "proyectos"-->
+
+            <!--Seccion correspondiente a presentación de "proyectos"-->
             <article class='row pb-5'>
-                <h2 class="col-12 titulo-inicio mt-5">Proyectos personales</h2>
+                <h2 class="col-12 index-tittle mt-5">Proyectos personales</h2>
                 <div class='col-12'>
-                    <p class="parrafo-inicio">Les presento los proyectos en los que he estado trabajando,
+                    <p class="index-paragraph">Les presento los proyectos en los que he estado trabajando,
                         aquí pueden encontrar:</p>
-                    <div class="card text-bg-light" >
-                        <img src="assets/img/marikeiks-imagen.jpg" class="card-img-top imagen-card"
-                            alt="imagen-card-marikeiks">
+
+                    <!--Proyecto 1 Marikeiks-->
+                    <div class="card text-bg-light">
+                        <img src="assets/img/marikeiks-imagen.jpg" class="card-img-top image-card"
+                            alt="image-card-marikeiks">
                         <div class="card-body">
                             <h5 class="card-title">Marikeiks</h5>
                             <p class="card-text">En este proyecto se implementa un sistema web para una pastelería. </p>
                             <a href="proyecto-marikeiks.html" class="btn btn-light">Ver mas...</a>
                         </div>
                     </div>
+
+                    <!--Proyecto 2 mockups Marikeiks-->
                     <div class="card text-bg-light">
-                        <img src="assets/img/mockups-imagen.jpg" class="card-img-top imagen-card"
-                            alt="imagen-card-mockups">
+                        <img src="assets/img/mockups-imagen.jpg" class="card-img-top image-card"
+                            alt="image-card-mockups">
                         <div class="card-body">
                             <h5 class="card-title">Mockups</h5>
                             <p class="card-text">En este proyecto se muestran los mockups con diferentes propuestas para
@@ -187,9 +202,11 @@
                             <a href="proyecto-mockups.html" class="btn btn-light">Ver mas...</a>
                         </div>
                     </div>
+
+                    <!--Proyecto 3 Pokedex-->
                     <div class="card text-bg-light">
-                        <img src="assets/img/pokedex-imagen.jpg" class="card-img-top imagen-card"
-                            alt="imagen-card-pokedex">
+                        <img src="assets/img/pokedex-imagen.jpg" class="card-img-top image-card"
+                            alt="image-card-pokedex">
                         <div class="card-body">
                             <h5 class="card-title">Pokedex</h5>
                             <p class="card-text">En este proyecto realice una pokedex para poder visualizar los detalles
@@ -202,6 +219,7 @@
         </div>
     </main>
 
+    <!--Mediante un archivo JavaScript se asocia el documento footer.html a este div.-->
     <div id="pie-pagina"></div>
 
     <!-- JavaScript Bundle with Popper -->

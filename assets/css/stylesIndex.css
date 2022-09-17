@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Klee+One:wght@600&family=Marcellus&family=Pacifico&family=Raleway&family=Sacramento&display=swap');
 
-/* tipo de letras de google fonts seleccionadas 
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Klee One', cursive;
-font-family: 'Marcellus', serif;
-font-family: 'Pacifico', cursive;
-font-family: 'Raleway', sans-serif;
-font-family: 'Sacramento', cursive;*/
-
-
-/* Contenido cuerpo de página */
+/*Estilos generales de la página*/
 section {
     background-color: #f8eeee;
     justify-content: center;
@@ -22,15 +13,14 @@ article {
     text-align: justify;
 }
 
-.titulo-inicio {
+.index-tittle {
     font-family: 'Josefin Sans', sans-serif;
     font-size: calc(16px + 1vw);
     color: #351e1e;
     text-align: center;
-
 }
 
-.parrafo-inicio {
+.index-paragraph {
     font-family: 'Josefin Sans', sans-serif;
     font-size: calc(9px + 1vw);
     color: #4f3736;
@@ -38,14 +28,7 @@ article {
     text-align: center;
 }
 
-
-.li-inicio {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: calc(7px + 1vw);
-    color: #4f3736;
-}
-
-#fondo-main {
+#main-background {
     background: linear-gradient(to bottom, rgba(127, 63, 191, 0.1), white,
             rgba(191, 63, 63, 0.1),
             rgba(127, 63, 191, 0.1)), url(../img/fondo.jpg);
@@ -53,7 +36,7 @@ article {
     height: 100%;
 }
 
-#fondo-parrafo-sobremi {
+#paragraph-background-aboutme {
     background: linear-gradient(to bottom, rgba(25, 35, 15, 0.18),
             #66535c,
             rgba(25, 35, 15, 0.18)), url(../img/fondo-sobremi.gif);
@@ -67,7 +50,6 @@ article {
     text-align: center;
 
 }
-
 
 /*Sección de hobbies*/
 .btn-hobbie {
@@ -97,7 +79,7 @@ article {
     border-radius: 10px;
 }
 
-/*Sección de cv*/
+/*Sección de curriculum*/
 .btn-cv {
     background: linear-gradient(to left, #b59796, #f8eeee, #b59796);
     color: #351e1e;
@@ -106,7 +88,7 @@ article {
     font-size: calc(10px + 1vw);
     border: 1px solid #cccccc;
     border-radius: 10px;
-    width: 250px;
+    width: calc(150px + 1vw);
     text-align: center;
     text-decoration: none;
 }
@@ -117,6 +99,12 @@ article {
     top: -4px;
     border: 3px solid wheat;
     color: #351e1e;
+}
+
+.cv-li {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: calc(7px + 1vw);
+    color: #4f3736;
 }
 
 /*Sección de proyectos*/
@@ -144,7 +132,7 @@ article {
     transform: scale(2.15);
 }
 
-.imagen-card {
+.image-card {
     object-fit: cover;
     width: 100%;
     height: calc(250px + 3vw);
