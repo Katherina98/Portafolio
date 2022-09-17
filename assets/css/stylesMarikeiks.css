@@ -1,11 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Marcellus&family=Pacifico&family=Raleway&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Klee+One:wght@600&family=Marcellus&family=Pacifico&family=Raleway&family=Sacramento&display=swap');
 
-/* font-family: 'Klee One', cursive;
-font-family: 'Marcellus', serif;
-font-family: 'Pacifico', cursive;
-font-family: 'Raleway', sans-serif;
-font-family: 'Sacramento', cursive;*/
-
+/*Estilos generales de la página*/
 .fondo-marikeiks {
     background: linear-gradient(to bottom, rgba(127, 63, 191, 0.1), white,
             rgba(191, 63, 63, 0.1),
@@ -18,7 +13,7 @@ font-family: 'Sacramento', cursive;*/
 .textoSpan {
     text-decoration: none;
     color: #351e1e;
-    font-family: 'Marcellus', serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .logo2{
@@ -35,14 +30,14 @@ font-family: 'Sacramento', cursive;*/
 }
 
 .titulo-proyecto-m{
-    font-family: 'Marcellus', serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: calc(10px + 1vw);
     color:midnightblue;
     text-align: center;
 }
 
 .parrafo-proyecto-m{
-    font-family: 'Marcellus', serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: calc(5px + 1vw);
     color: #4f3736;
     margin-bottom: 30px;

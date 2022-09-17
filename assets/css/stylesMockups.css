@@ -31,6 +31,12 @@
     padding-bottom: 3%;
 }
 
+.divisor {
+    background: url(../img/fondo-paris.jpg);
+    height: calc(5px + 1vw);
+    width: 100%;
+}
+
 /*Section correspondiente a la galería de los mockups*/
 .desing-container {
     background-color: #fff0f6;

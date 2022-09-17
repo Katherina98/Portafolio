@@ -53,6 +53,7 @@
     color: white;
     font-size: calc(5px + 1vw);
     font-family: 'Josefin Sans', sans-serif;
+    display: inline-flex;
 }
 
 .link-linkedin-contact:hover {

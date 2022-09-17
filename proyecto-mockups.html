@@ -17,8 +17,10 @@
 </head>
 
 <body>
+    <!--Mediante un archivo JavaScript se asocia el documento header.html a este div.-->
     <div id="cabecera"></div>
 
+    <!--Contenedor principal de la página mockups-->
     <main class="background-mockups">
         <div id="container-tittle-subtitle" class="mb-5">
             <h1 id="sug-tittle">Mockups</h1>
@@ -26,6 +28,8 @@
                 mejoras.</p>
                 <hr>
         </div>
+
+        <!--Contenedor secundario, utiliza la clase container para imagenes y formulario-->
         <div class="container p-5">       
             <section class="row mb-5 justify-content-center">
                 <!--Galería de imagenes de Mockup número 1-->
@@ -188,6 +192,7 @@
             </section>
 
             <section>
+                <div class="divisor"></div>
                 <!--Bloque de mensaje de error-->
                 <div id="form-mensaje-error" class="alert alert-danger" role="alert" style="display: none;">
                     <ul></ul>
@@ -244,9 +249,11 @@
                 </form>
                 <!--Fin de formulario de sugerencia-->
             </section>
+            <div class="divisor"></div>
         </div>
     </main>
 
+    <!--Mediante un archivo JavaScript se asocia el documento footer.html a este div.-->
     <div id="pie-pagina"></div>
 
     <!-- JavaScript Bundle with Popper -->
