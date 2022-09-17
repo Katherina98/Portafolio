@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Klee+One:wght@600&family=Marcellus&family=Pacifico&family=Raleway&family=Sacramento&display=swap');
 
-section.bg-section-left hr {
+/*Estilos generales de la página*/
+article {
+    padding-bottom: 1%;
+}
+
+div#bg-section-left hr {
     color: white;
     width: 100%;
-    height: 5px;
+    height: 2px;
 }
 
-section.bg-section-rigth hr {
+div#bg-section-rigth hr {
     color: black;
     width: 100%;
-    height: 5px;
+    height: 2px;
 }
 
-.fondo-general {
+.general-background {
     background: linear-gradient(to bottom, rgba(127, 63, 191, 0.1), white,
             rgba(191, 63, 63, 0.1),
             rgba(127, 63, 191, 0.1)), url(../img/fondo.jpg);
@@ -20,13 +25,9 @@ section.bg-section-rigth hr {
     height: 100%;
 }
 
-.contenedor-cv {
+.resume-container {
     display: flex;
     flex-direction: row;
-}
-
-article {
-    padding-bottom: 1%;
 }
 
 /*Sección correspondiente al lado izquierdo*/
@@ -36,26 +37,24 @@ article {
     padding: 3%;
 }
 
-.tittle-section-left {
+.left-section-tittle {
     color: #fff8fb;
     font-family: 'Josefin Sans', sans-serif;
     font-size: calc(8px + 1vw);
 }
 
-.tittle-secondary-left {
+.left-section-secondary-tittle{
     color:#8f6277;
     font-family: 'Josefin Sans', sans-serif;
     font-size: calc(6px + 1vw);
     font-weight: 900;
-
 }
 
-.text-white-subtitle-left {
+.left-section-subtitle-white {
     color:whitesmoke;
     font-family: 'Josefin Sans', sans-serif;
     font-size: calc(5px + 1vw);
     font-weight: 600;
-
 }
 
 .text-white {
@@ -84,7 +83,6 @@ article {
 }
 
 
-
 /*Enlace de linkedin en sección de contacto*/
 #enlace-linkedin {
     text-decoration: none;
@@ -101,7 +99,6 @@ article {
     -webkit-transition: all 500ms ease;
     -o-transition: all 500ms ease;
 }
-
 
 /*Sección correspondiente al lado derecho*/
 #bg-section-rigth {

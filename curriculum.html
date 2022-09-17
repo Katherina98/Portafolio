@@ -9,22 +9,28 @@
     <!-- CSS Personalizado -->
     <link rel="stylesheet" href="assets/css/stylesCurriculum.css" />
     <link rel="stylesheet" href="assets/css/stylesHeaderFooter.css" />
+
     <!--Link de bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
+    <!--Mediante un archivo JavaScript se asocia el documento header.html a este div.-->
     <div id="cabecera"></div>
 
-    <main class="fondo-general">
-        <div class="contenedor-cv container pt-5 pb-5">
-            <section id="bg-section-left">
+    <!--Contenedor principal de la página curriculum-->
+    <main class="general-background">
+        <!--Sección correspondiente al lado izquierdo de curriculum-->
+        <div class="resume-container container pt-5 pb-5">
+            <div id="bg-section-left">
+                <!--Fecha de nacimiento-->
                 <span class="text-white">29/01/1998</span>
 
                 <hr>
+                <!--Detalle de contacto personal-->
                 <article>
-                    <h4 class="tittle-section-left">Contacto</h4>
+                    <h4 class="left-section-tittle">Contacto</h4>
                     <div class="text-white no-list">
                         <img class="image-social-media" src="assets/img/llamada-telefonica.png" alt="Telefono" />
                         <span class="text-white">
@@ -43,8 +49,9 @@
                 </article>
 
                 <hr>
+                <!--Listado de habilidades blandas-->
                 <article>
-                    <h4 class="tittle-section-left">Habilidades</h4>
+                    <h4 class="left-section-tittle">Habilidades</h4>
                     <ul class="text-white">
                         <li>Liderazgo.</li>
                         <li>Trabajo en equipo.</li>
@@ -55,8 +62,9 @@
                 </article>
 
                 <hr>
+                <!--Descripción de conocimientos en el área de frontend-->
                 <article>
-                    <h4 class="tittle-section-left">Frontend</h4>
+                    <h4 class="left-section-tittle">Frontend</h4>
                     <ul class="text-white">
                         <li>Desarrollo frontend con REACT.</li>
                         <li>Construcción de UI.</li>
@@ -70,8 +78,9 @@
                 </article>
 
                 <hr>
+                <!--Descripción de conocimientos en el área de backend-->
                 <article>
-                    <h4 class="tittle-section-left">Backend</h4>
+                    <h4 class="left-section-tittle">Backend</h4>
                     <ul class="text-white">
                         <li>Diseño e implementación de algoritmos complejos en lenguaje Java.</li>
                         <li>Pruebas de software utilizando JUnit.</li>
@@ -82,8 +91,9 @@
                 </article>
 
                 <hr>
+                <!--Descripción de herramientas adicionales-->
                 <article>
-                    <h4 class="tittle-section-left">Otras herramientas</h4>
+                    <h4 class="left-section-tittle">Otras herramientas</h4>
                     <ul class="text-white">
                         <li>Versionamiento de código con Git en Github.</li>
                         <li>Metodologías ágiles SCRUM (Kanban, Trello).</li>
@@ -98,38 +108,42 @@
                 </article>
 
                 <hr>
+                <!--Descripción de certificaciones. Incluye: lugar, fecha y nombre certificación-->
                 <article>
-                    <h3 class="tittle-section-left">Certificaciones</h3>
-                    <h4 class="tittle-secondary-left">SCRUMstudy.</h4>
-                    <h5 class="text-white-subtitle-left">Junio 2022.</h5>
+                    <h3 class="left-section-tittle">Certificaciones</h3>
+                    <h4 class="left-section-secondary-tittle">SCRUMstudy.</h4>
+                    <h5 class="left-section-subtitle-white">Junio 2022.</h5>
                     <ul class="text-white">
                         <li>Scrum Fundamentals Certified.</li>
                     </ul>
-                    <h4 class="tittle-secondary-left pt-2">Amazon Web Services Training and certification. </h4>
-                    <h5 class="text-white-subtitle-left">Oct 2021.</h5>
+                    <h4 class="left-section-secondary-tittle pt-2">Amazon Web Services Training and certification. </h4>
+                    <h5 class="left-section-subtitle-white">Oct 2021.</h5>
                     <ul class="text-white">
                         <li>AWS certified Cloud Practitioner.</li>
                     </ul>
-                    <h4 class="tittle-secondary-left pt-2">KBO Consultores.</h4>
-                    <h5 class="text-white-subtitle-left">Julio 2021.</h5>
+                    <h4 class="left-section-secondary-tittle pt-2">KBO Consultores.</h4>
+                    <h5 class="left-section-subtitle-white">Julio 2021.</h5>
                     <ul class="text-white">
                         <li>Normas ISO 9001:2015 + ISO 45001:2018.</li>
                     </ul>
-                    <h4 class="tittle-secondary-left pt-2">Coursera.</h4>
-                    <h5 class="text-white-subtitle-left">Junio 2021.</h5>
+                    <h4 class="left-section-secondary-tittle pt-2">Coursera.</h4>
+                    <h5 class="left-section-subtitle-white">Junio 2021.</h5>
                     <ul class="text-white">
                         <li>First Step Korean.</li>
                     </ul>
                 </article>
-            </section>
+            </div>
 
-            <section id="bg-section-rigth">
+            <!--Sección correspondiente al lado derecho de curriculum-->
+            <div id="bg-section-rigth">
+                <!--Titulo principal-->
                 <article>
                     <h2 id="tittle-name">Katherina Orellana</h2>
                     <p class="text-black-subtitle-rigth">Desarrolladora Full Stack Java Junior</p>
                 </article>
 
                 <hr>
+                <!--Descripción de resumen profesional-->
                 <article>
                     <h3 class="tittle-section-rigth">Resumen profesional</h3>
                     <p class="text-black">Desarrolladora con profundo interés en la
@@ -144,23 +158,29 @@
                 </article>
 
                 <hr>
+                <!--Descripción de datos académicos. Incluye: lugar, fecha y título-->
                 <article>
+                    <!--Estudio mas reciente-->
                     <h3 class="tittle-section-rigth">Datos académicos</h3>
                     <h4 class="tittle-secondary-rigth">Generation Chile</h4>
                     <h5 class="text-black-subtitle-rigth">Mayo 2022 - Julio 2022</h5>
                     <p class="text-black pb-2">Desarrolladora Full Stack Java Junior</p>
 
+                    <!--Estudio anterior-->
                     <h4 class="tittle-secondary-rigth">Centro de formación técnica - Inacap</h4>
                     <h5 class="text-black-subtitle-rigth">Marzo 2016 - Diciembre 2017</h5>
                     <p class="text-black pb-2">Técnico nivel superior en Telecomunicaciones, conectividad y redes.</p>
 
+                    <!--Estudio mas antiguo-->
                     <h4 class="tittle-secondary-rigth">Técnica las nieves</h4>
                     <h5 class="text-black-subtitle-rigth">Marzo 2014 - Diciembre 2015</h5>
                     <p class="text-black pb-2">Técnico nivel medio en Telecomunicaciones.</p>
                 </article>
 
                 <hr>
+                <!--Descripción de experiencia laboral. Incluye: cargo, lugar, fecha y laborales a desempeñar-->
                 <article>
+                    <!--Cargo mas reciente-->
                     <h3 class="tittle-section-rigth">Experiencia laboral</h3>
                     <h4 class="tittle-secondary-rigth">Coordinadora control de calidad</h4>
                     <h5 class="text-black-subtitle-rigth">Traslado de YBP Spa. a GRUPO FPC | Agosto 2018 - Abril 2022</h5>
@@ -183,6 +203,7 @@
                         <li>Participar en la Implementación del SGI en la Organización.</li>
                     </ul>
 
+                    <!--Cargo anterior-->
                     <h4 class="tittle-secondary-rigth">Asistente técnico de proyectos</h4>
                     <h5 class="text-black-subtitle-rigth">YBP Spa. | Mayo 2018 - Agosto 2018</h5>
                     <ul class="text-black">
@@ -193,10 +214,11 @@
                         <li>Apoyo en actividades asignadas por el departamento de Construcción.</li>
                     </ul>
                 </article>
-            </section>
+            </div>
         </div>
     </main>
 
+    <!--Mediante un archivo JavaScript se asocia el documento footer.html a este div.-->
     <div id="pie-pagina"></div>
 
     <!-- JavaScript Bundle with Popper -->
